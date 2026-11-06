@@ -1,0 +1,53 @@
+{
+    "name" : "白狮阿杭计划",
+    "appid" : "__UNI__6B08D52",
+    "description" : "公众共建的动物个体数字档案馆",
+    "versionName" : "1.0.0",
+    "versionCode" : 100,
+    "transformPx" : false,
+    "locale" : "zh-Hans",
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "modules" : {
+            "OAuth" : {}
+        },
+        "distribute" : {
+            "android" : {
+                "permissions" : [ "<uses-permission android:name=\"android.permission.INTERNET\"/>" ]
+            },
+            "sdkConfigs" : {
+                "oauth" : {
+                    "weixin" : {}
+                }
+            }
+        }
+    },
+    "h5" : {
+        "title" : "白狮阿杭计划 - PROJECT AHANG",
+        "router" : {
+            "mode" : "hash"
+        }
+    },
+    "mp-weixin" : {
+        "appid" : "wx2836cb548fe1491d",
+        "setting" : {
+            "urlCheck" : true,
+            "es6" : true,
+            "postcss" : true,
+            "minified" : true
+        },
+        "usingComponents" : true
+    },
+    "vueVersion" : "3"
+}

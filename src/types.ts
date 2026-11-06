@@ -175,7 +175,66 @@ export interface Contribution {
 export interface TaskChallenge {
   id: string;
   title: string;
+  description: string;
   rewardLabel: string;
   progressText: string;
   actionText: string;
+  animalId?: string;
+  animalName?: string;
+  expectedInfo?: string;
+  creatorName?: string;
+  contributionCount?: number;
+  createdAt?: string;
+}
+
+export interface PublicMemoryRecord {
+  id: string;
+  animalIds: string[];
+  title: string;
+  author: string;
+  date: string;
+  text: string;
+  category: string;
+  categoryLabel: string;
+  image?: string;
+  likes: number;
+  hasLiked: boolean;
+}
+
+export interface MemorialCommentRecord {
+  id: string;
+  animalId: string;
+  username: string;
+  text: string;
+  timestamp: string;
+  flowers: number;
+  hasFlowered: boolean;
+}
+
+export interface DetailedSubmissionRecord {
+  id: string;
+  type: "recommend" | "observation" | "supplement" | "creation" | "correction";
+  title: string;
+  submittedAt: string;
+  status: "submitted" | "pending" | "need_supplement" | "candidate" | "official" | "rejected";
+  statusLabel: string;
+  details: string;
+  adminComment: string;
+  animalName: string;
+  photo?: string;
+  source?: string;
+  copyright?: string;
+}
+
+export interface CandleStat {
+  animalId: string;
+  count: number;
+  hasLitToday: boolean;
+}
+
+export interface ProfileStats {
+  submissionCount: number;
+  pendingCount: number;
+  approvedContributionCount: number;
+  favoriteCount: number;
 }

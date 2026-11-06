@@ -1,0 +1,20 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationStyle": "custom",
+        "disableScroll": true,
+        "enableShareAppMessage": true,
+        "enableShareTimeline": true
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "白狮阿杭计划",
+    "navigationBarBackgroundColor": "#FAF8F5",
+    "backgroundColor": "#FAF8F5",
+    "backgroundTextStyle": "dark"
+  }
+}
