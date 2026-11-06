@@ -1,6 +1,6 @@
 {
-  "name": "Remix: PROJECT AHANG · MVP Preview login",
-  "description": "PROJECT AHANG（白狮阿杭计划）是一项以动物个体数字档案为核心的公益项目，通过公众共同记录、科学整理与长期保存，为每一只值得被记住的动物建立持续更新的生命档案。本版本为 MVP Preview，仅用于产品体验与功能验证。PROJECT AHANG is a digital archive project dedicated to preserving the life stories of individual animals through public participation, scientific documentation, and long-term archiving. This is an MVP Preview for product validation.",
+  "name": "白狮阿杭计划 · uni-app",
+  "description": "PROJECT AHANG（白狮阿杭计划）是一个公众共建的动物个体数字档案馆。项目已迁移为 Vue 3 + uni-app，支持 H5、微信小程序与 App 构建，并保留原有后端交互。",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

@@ -2,7 +2,10 @@ node_modules/
 build/
 dist/
 coverage/
+.vite/
 .DS_Store
+Thumbs.db
 *.log
+logs/
 .env*
 !.env.example

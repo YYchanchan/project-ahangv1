@@ -1,26 +1,39 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "experimentalDecorators": true,
-    "useDefineForClassFields": false,
+    "useDefineForClassFields": true,
     "module": "ESNext",
-    "lib": [
-      "ES2022",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "moduleResolution": "bundler",
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "allowJs": true,
-    "jsx": "react-jsx",
+    "types": [
+      "@dcloudio/types",
+      "node"
+    ],
+    "baseUrl": ".",
     "paths": {
       "@/*": [
-        "./*"
+        "src/*"
       ]
-    },
-    "allowImportingTsExtensions": true,
-    "noEmit": true
-  }
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.vue",
+    "admin/**/*.ts",
+    "admin/**/*.vue",
+    "server.ts",
+    "server/**/*.ts",
+    "scripts/**/*.ts",
+    "vite.config.ts"
+  ],
+  "exclude": [
+    "src/**/*.tsx",
+    "src/context/**"
+  ]
 }
